@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+  html {
+  scroll-behavior: smooth;
+  }
+
+  /* Top Navbar Styles */
+.top-navbar {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  background: rgba(245, 246, 250, 0.97);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between title and links */
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(180,180,180,0.10);
+  border-bottom: 1.5px solid #e0e0e0;
+  padding: 0 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.nav-title {
+  margin-left: 2.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2e3a59;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0rem;
+}
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #e0e0e0;
+  color: #222;
+}
+
+/* Sidebar for Contacts */
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #dedede 0%, #e9ecef 100%, #ffffff 100%);
+
+  backdrop-filter: blur(4px);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 900;
+  box-shadow: 2px 0 12px rgba(180, 180, 180, 0.541);
+  border-right: 1.5px solid #e0e0e0;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.sidebar-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #2e3a59;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.contact-list a {
+  color: #2e3a59;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-list a:hover {
+  color: #0077b5;
+}
+  
+  .profile {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+    background: #eee;
+  }
+  
+  .profile h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .profile p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .sidebar nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+  
+  .sidebar nav a:hover,
+  .sidebar nav a.active {
+    background: #e0e0e0;
+    color: #222;
+  }
+
+  .about-justify {
+    text-align: justify;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 260px; /* Match sidebar width */
+    padding: 5.5rem 2rem 2rem 2rem; /* top padding for navbar */
+    background: linear-gradient(120deg, #dedede 0%, #e9ecef 100%);
+  }
+  
+  .card {
+    background: #ffffff8a;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(28, 40, 51, 0.301); /* Fixed color shadow */
+    padding: 2rem 2rem 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #2e3a59;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.7rem 1.2rem;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  
+  .skills-list li {
+    padding: 0.3rem 0.2rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  
+  .project-container {
+    background: #ffffff8a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.75rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(44,62,80,0.10);
+  }
+  
+  .project-description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #222;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem 0;
+    background: none;
+    color: #585858;
+    font-size: 0.95rem;
+  }
+  
+  .education-list {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  
+  .education-list li {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  
+  .awards-list {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  
+  .awards-list li {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  
+  .award-certificate {
+    display: block;
+    margin: 8px 0 8px 0;
+    max-width: 220px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    cursor: pointer;
+  }
+  
+  .img-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-modal-content {
+    display: block;
+    margin: 40px auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  }
+  
+  .img-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2100;
+    transition: color 0.2s;
+  }
+  
+  .img-modal-close:hover {
+    color: #ffd700;
+  }
+  
+  /* Contact Circles Styles */
+.contact-circles {
+  display: flex;
+  gap: 0.5rem;           /* Reduce gap for compactness */
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-circle {
+  width: 36px;           /* Smaller size */
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent; /* Transparent background */
+  border: 1.5px solid #2e3a59;   /* Thinner border for smaller button */
+  color: #2e3a59;
+  font-size: 1.1rem;     /* Smaller icon */
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-decoration: none;
+}
+
+.contact-circle:hover {
+  background: #2e3a59;
+  color: #fff;
+  border-color: #2e3a59;
+}
+
+/* Responsive Design */
+  @media (max-width: 900px) {
+    .container {
+      margin-left: 0;
+      padding: 5.5rem 0.5rem 2rem 0.5rem;
+    }
+    .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 1rem 0;
+      box-shadow: none;
+      border-right: none;
+      border-bottom: 1.5px solid #e0e0e000;
+    }
+    .sidebar-header {
+      margin-bottom: 0.5rem;
+    }
+    .profile {
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+    }
+    .sidebar nav {
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 0;
+      width: auto;
+    }
+    .sidebar nav a {
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .top-navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 0.5rem 0.5rem;
+    }
+    .nav-profile {
+      margin-bottom: 0.5rem;
+    }
+    .container {
+      padding: 6.5rem 0.2rem 1rem 0.2rem;
+    }
+    .sidebar {
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  section {
+    scroll-margin-top: 80px; /* slightly more than navbar height */
+}

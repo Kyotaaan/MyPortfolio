@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Martillas | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="top-navbar">
+    <div class="nav-title">Portfolio</div>
+    <div class="nav-links">
+      <a href="#"><i class="fas fa-user"></i> About</a>
+      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+      <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#awards"><i class="fas fa-trophy"></i> Awards</a>
+    </div>
+  </nav>
+
+  <!-- Sidebar with Profile and Contacts -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profile.jpg" alt="Christian Lloyd Martillas" class="profile-img"/>
+      <h1>Christian Lloyd Martillas</h1>
+      <p>Web Designer</p>
+      <p>Freelancer</p>
+      <p>Developer</p>
+    </div>
+    <div>
+      <h2 class="sidebar-header">Contacts</h2>
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> <span>christianmartillas@gmail.com</span></li>
+        <li><i class="fas fa-phone"></i> <span>+63 995 634 1829</span></li>
+      </ul>
+      <h3 class="sidebar-header" style="margin-top:1.5rem;">Socials</h3>
+      <div class="contact-circles">
+        <a href="https://www.facebook.com/ethanmrti00" target="_blank" class="contact-circle" title="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/christaaaan_" target="_blank" class="contact-circle" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Kyotaaan" target="_blank" class="contact-circle" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://t.me/Christaaan" target="_blank" class="contact-circle" title="Telegram">
+          <i class="fab fa-telegram"></i>
+        <a href="https://www.linkedin.com/in/christianmartillas/" target="_blank" class="contact-circle" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p class="about-justify">
+        Hello I'm Christian, a 3rd-year IT student that has a strong passion for web design and development, 
+        with experience in both coding and graphic design. I enjoy building responsive and 
+        user-friendly websites using HTML, CSS, and JavaScript. With a creative background, 
+        I aim to develop web projects that are not only functional but also visually engaging. 
+        Looking to improve my skills, explore new tools, and gain hands-on experience through 
+        real-world projects.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fas fa-database"></i> MongoDB</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fas fa-code"></i> C#</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <a href="https://ranggayan.netlify.app/login" target="_blank">
+          <img src="ranggayan.jpg" alt="Ranggayan" class="project-image" />
+        </a>
+        <div class="project-description">
+          <strong>Ranggayan</strong><br>
+          A Mobile-Based Barangay Governance and Communication System for Barangay 140 Zone 15.
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>BS Information Technology, College</strong><br>
+          STI College Pasay-Edsa, 2022 - Present
+        </li>
+        <li>
+          <strong>Information and Communication Technology, Senior High School</strong><br>
+          AMA Computer College Parañaque, 2020 - 2022
+        </li>
+        <li>
+          <strong>Secondary School</strong><br>
+          Parañaque National High School Baclaran-Annex, 2016 - 2020
+        </li>
+        <li>
+          <strong>Grade School</strong><br>
+          Rogelio G. Gatchalian Elementary School, 2010 - 2016
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards" class="card">
+      <h2>Awards</h2>
+      <ul class="awards-list">
+        <li>
+          <strong>Advanced Systems Integration and Architecture Finisher SAP - Dec 2024</strong><br>
+          Completed an advanced course in systems integration and architecture.
+        </li>
+        <li>
+          <strong>Systems and Administration - Dec 2023</strong><br>
+          <img src="cert-sysadmin.jpg" alt="Systems Admin Certificate" class="award-certificate" data-full="cert-sysadmin.jpg" />
+        </li>
+        <li>
+          <strong>Java Fundamentals - Oct 2023</strong><br>
+          <img src="cert-java.jpg" alt="Java Certificate" class="award-certificate" data-full="cert-java.jpg" />
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Christian Lloyd Martillas - Made with ❤️ - All rights reserved.</p>
+    </footer>
+  </main>
+
+  <div id="img-modal" class="img-modal">
+    <span class="img-modal-close" id="img-modal-close">&times;</span>
+    <img class="img-modal-content" id="img-modal-content" alt="Certificate Preview" />
+  </div>
+
+  <script>
+    document.querySelectorAll('.award-certificate').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.getElementById('img-modal');
+        const modalImg = document.getElementById('img-modal-content');
+        modal.style.display = 'flex';
+        modalImg.src = this.getAttribute('data-full');
+        modalImg.alt = this.alt;
+      });
+    });
+
+    document.getElementById('img-modal-close').onclick = function() {
+      document.getElementById('img-modal').style.display = 'none';
+    };
+
+    document.getElementById('img-modal').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
+</body>
+</html>
